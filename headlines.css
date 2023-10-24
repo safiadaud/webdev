@@ -1,0 +1,74 @@
+body {
+    width : 80%;
+
+    /* padding property is used to add space 
+    between the content of an element and its border
+        
+    margin property is used to control the space 
+    outside an element, creating separation between it 
+    and other elements.
+
+    
+    
+    */
+    margin: auto;
+    border: 2px solid orange;
+    padding: 15px;
+}
+
+
+
+
+header nav ul {
+    list-style-type: none;
+
+    /* changes from column format to horizontal format  */
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+header nav ul li {
+    padding: 10px 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color : black
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+span{
+    color: orange;
+
+}
+
+main {
+    background-color: orange;
+}
+
+#top {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 10%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: auto;
+}
