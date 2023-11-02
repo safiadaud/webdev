@@ -13,22 +13,22 @@
 
 // 1
 
-console.log("Steve " + "Jobs" )
+console.log("Steve" + " " + "Jobs" )
 
 
 // 2
 let day = 4;
-let month = "November ";
+let month = "November";
 
-console.log(month + day);
+console.log(month + " " + day);
 
 
 // 3 
 const houseNo = 10;
-const street = " Downing Street ";
+const street = "Downing Street";
 const city = "London";
 
-console.log(houseNo + street + city);
+console.log(houseNo + " " + street + " " + city);
 
 // 4
 
