@@ -70,3 +70,64 @@ console.log("Results:", add(3, 4));
 
 const today = new Date();
 console.log(today)
+
+var greeting = "Hello, World";
+console.log(greeting.toLowerCase());
+console.log(greeting.length);
+
+// string methods and properties
+
+console.log(greeting.toUpperCase());
+
+console.log(greeting.slice(4, 10));
+
+// start and end values less than 0 are treated as 0 for substring()
+
+console.log(greeting.substring(-9, 10));
+
+console.log(greeting.substr(0, 5))
+
+console.log(greeting.replace("World", "Safia"));
+
+let text = "apples, oranges, apples, kiwi"
+
+// regular expressions witha /g globle to replace all occurances of a word
+// strings are immutable, results must be saved in other variables for later usage
+let newText = text.replace(/apples/g, "pineapples");
+console.log(newText);
+
+let whitespace = "      abcdefghijklmn        ";
+console.log(whitespace.trim());
+console.log(whitespace.trimEnd());
+console.log(whitespace.trimStart());
+
+console.log(greeting.split(","));
+
+
+// Arrays
+ 
+let fruits = ["Banana", "Kiwi", "Apple"];
+
+console.log(fruits.length);
+
+
+fruits.push("Cherry");
+console.log(fruits)
+
+fruits.pop();
+console.log(fruits);
+
+fruits.unshift("Oranges");
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+
+
+let dairy = ["milk", "cheese", "yoghurt"];
+console.log(dairy);
+let shoppingList = fruits.concat(dairy);
+console.log(shoppingList);
+
+
+console.log(shoppingList.sort());
