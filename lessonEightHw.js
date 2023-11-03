@@ -42,11 +42,16 @@ else{
 let mobile = "Iphone";
 
 if (typeof(mobile) == "string"){
-    if (mobile.toLowerCase() == "android"){
-        console.log("You are using an android.");
-    }
-    else if(mobile.toLowerCase("iphone")){
-        console.log("You are using an iphone.");
+
+    if(mobile.toLowerCase() == "android" || "iphone"){
+
+        if (mobile.toLowerCase() == "android"){
+            console.log("You are using an android.");
+        }
+        else {
+            console.log("You are using an iphone.");
+        }
+        
     }
     else{
         console.log("You are not using an iphone or an android.")
