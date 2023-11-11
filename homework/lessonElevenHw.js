@@ -45,3 +45,19 @@ for (let i = 0; i <= 100; i += 2){
 
 
 //  created the palindrome function in lesson ten
+
+// function that returns the sum of an array by looping through the array using a for loop
+
+
+function sum(array){
+    let total= 0;
+    for (let i = 0; i < array.length; i++){
+       
+        total += array[i];
+
+    }
+    return total;
+}
+
+let array = [1, 2, 3234]
+console.log(sum(array));
