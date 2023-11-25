@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+
+        <title>document object model</title>
+
+        <link href="">
+        <style>
+            div {
+                height: 200px;
+                width: 200px;
+                border-radius: 1px solid black;
+
+            }
+            .darkmode{
+                background-color: rgb(50, 52, 53);
+                color: violet;
+            }
+
+            #darkmode{
+                right: 0; 
+                top: 0; 
+                position: fixed;
+
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>document object model</h1>
+            <h2 id="h2tag">the background of this element should turn red when you click it</h2>
+            <button id="darkmode" type="submit">dark mode</button>
+        </header>
+        <main>
+            <form>
+                <label>Name</label>
+                <input type="text" placeholder="name"><br>
+
+
+                <label>Email</label>
+                <input type="email" placeholder="email"><br>
+            
+                <button type="submit">generate card</button>
+            </form>
+        </main>
+
+        
+
+        <script src="doms.js"></script>
+    </body>
+</html>
