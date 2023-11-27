@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
         div.append(h3El);
     })
 
-    palindromeCheck("kayak");
-
     const form = document.querySelector("form");
 
     form.addEventListener('submit', function(e) {
