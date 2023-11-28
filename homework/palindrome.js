@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (newstring === alphanumericString){
             console.log(`${string} is a palindrome.`);
-            return newstring;
+            return true;
         }
         else{
             console.log(`${string} is not a palindrome.`);
@@ -41,13 +41,35 @@ document.addEventListener("DOMContentLoaded", function() {
     
     }
 
+    let btn = document.getElementById("darkModeBtn");
+    btn.addEventListener('click', function(){
+        body.classList.toggle("darkmode");
+      
+    })
+
+
     const h1 = document.querySelector('h1');
 
+    let definitionVisible = false;
+
     h1.addEventListener('click', function(){
-        let h3El = document.createElement('h3');
-        h3El.innerText = "a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run."
+
         let div = document.getElementById('definition');
-        div.append(h3El);
+
+        // Toggle visibility based on the state
+        if (definitionVisible){
+            // clear content of div
+            div.innerHTML = '';
+        }
+        else {
+            // if not visible add definition to the div
+            let h3El = document.createElement('h3');
+            h3El.innerText = "a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run."
+            div.append(h3El);
+        }
+        // ! operator is used to negate a boolean value; if true --> false and if false --> true
+        // Update the state
+        definitionVisible = !definitionVisible;
     })
 
     const form = document.querySelector("form");
@@ -60,6 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let h2El = document.createElement('h2');
         let div = document.getElementById('form-div');
 
+
+        // if function returns true
         if (palindromeCheck(input.value)){
             h2El.innerText = input.value + " is a palindrome";
             div.append(h2El);
@@ -72,14 +96,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     })
 
-
-
-    let btn = document.getElementById("darkModeBtn");
-    btn.addEventListener('click', function(){
-        body.classList.toggle("darkmode");
-      
+    const clearButton = document.getElementById('clearBtn');
+    clearButton.addEventListener("click", function(){
+        let div = document.getElementById('form-div');
+        // clear div when user clicks the clear button
+        div.innerHTML = '';
+        body.append(div);
     })
 
+
+    
 
 })
 
