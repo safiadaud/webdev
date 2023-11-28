@@ -1,0 +1,9 @@
+form > label > input{
+    margin: 5px;
+    padding: 10px;
+}
+
+#submitBtn{
+    margin-top: 15px;
+    padding: 10px;
+}
