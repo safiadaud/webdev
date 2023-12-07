@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // if function returns true
         if (palindromeCheck(input.value)){
-            h2El.innerText = input.value + " is a palindrome";
+            h2El.innerText = input.value + " is a palindrome.";
             div.append(h2El);
         }
         else{
