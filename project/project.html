@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DOMs Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8">
+        <link href="./project.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form id="form-one">
+                
+                <input type="search" placeholder="search card"><br>
+                <button id="btn" type="submit">search</button>
+            </form>
+            
+
+            <form id="form-two">
+                <label for="movieName">Movie Name: <input id="movieName" autocomplete="off" type="text" placeholder="movie name"></label>
+                
+                <label for="url">Image URL: <input id="url" autocomplete="off" type="text" placeholder="paste image url here"></label>
+                
+                <button id="addBtn" type="submit">Add a card</button> 
+                
+            </form>
+            
+        </div>
+        
+        <h3 id="not-in-the-list" class="dontDisplay">The movie you searched for is not in the list.</h3>
+        
+        <div class="container" id="container">
+            <div class="cards" id="interstellarCard">
+                <img alt="Interstellar" src="https://musicart.xboxlive.com/7/912b1000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080">
+                <h1>Interstellar</h1>
+            </div>
+            <div class="cards" id="avengersCard">
+                <img alt="Avengers" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg">
+                <h1>Avengers</h1>
+            </div>
+            <div class="cards" id="theBearCard">
+                <img alt="The Bear" src="https://resizing.flixster.com/MJZOBq4VZj0Mx0fNHNHMk4lNO6E=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvODgxZDkxYTMtZWVjNS00OTc4LWJiY2MtMWNhNmUzNTFhZGI1LmpwZw==">
+                <h1>The Bear</h1>
+            </div>
+            <div class="cards" id="twdCard">
+                <img alt="The Walking Dead" src="https://m.media-amazon.com/images/M/MV5BZmU5NTcwNjktODIwMi00ZmZkLTk4ZWUtYzVjZWQ5ZTZjN2RlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg">
+                <h1>The Walking Dead</h1>
+            </div>
+            <div class="cards" id="tdkCard">
+                <img alt="The Dark Knight" src="https://musicart.xboxlive.com/7/abb02f00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080">
+                <h1>The Dark Knight</h1>
+            </div>
+            <div class="cards" id="harryPotterCard">
+                <img alt="Harry Potter and the Philosopher's Stone" src="https://static.posters.cz/image/750/harry-potter-philosopher-s-stone-i104639.jpg">
+                <h1>Harry Potter and the Philosopher's Stone</h1>
+            </div>
+            <div class="cards" id="hobbitCard">
+                <img alt="Hobbit" src="https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_FMjpg_UX1000_.jpg">
+                <h1>Hobbit</h1>
+            </div>
+            <div class="cards" id="tennetCard">
+                <img alt="Tennet" src="https://flxt.tmsimg.com/assets/p17758177_v_v13_ad.jpg">
+                <h1>Tennet</h1>
+            </div>
+            <div class="cards" id="nopeCard">
+                <img alt="Nope" src="https://m.media-amazon.com/images/S/pv-target-images/7f34d24aa737e5f12cf4152755b775ae463b2974562f873b866865f295d3405e.jpg">
+                <h1>Nope</h1>
+            </div>
+            <div class="cards" id="getOutCard">
+                <img alt="Get Out" src="https://m.media-amazon.com/images/M/MV5BMjUxMDQwNjcyNl5BMl5BanBnXkFtZTgwNzcwMzc0MTI@._V1_FMjpg_UX1000_.jpg">
+                <h1>Get Out</h1>
+            </div>
+        </div>
+        <script src="./project.js"></script>
+    </body>
+</html>
